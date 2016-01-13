@@ -1,11 +1,13 @@
 dchq=require('./lib/dchq');
 obj=new dchq({username: 'admin@dchq.io', password:'admin123'});
 
-/*obj.getBlueprints().then(function(blueprints){
+obj.getBlueprints().then(function(blueprints){
   console.log(blueprints);
 }, function(err){
   console.log(err);
 });
+
+/*
 
 obj.createBlueprint({
 "name": "amal-Nginx-test",
@@ -845,10 +847,11 @@ obj.settingsEncrypt('dsfdsf', 'sdfdsf').then(function(resp){
   console.log(resp);
 }, function(err){
   console.log(err);
-});*/
+});
 
 obj.settingsRecreateMissingQueues().then(function(resp){
   console.log(resp);
 }, function(err){
   console.log(err);
 });
+*/
