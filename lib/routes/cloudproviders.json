@@ -1,0 +1,50 @@
+{
+	"getCloudproviderRegionsById": {
+    "path": "\/cloudproviders\/:id\/regions",
+    "method": "GET",
+    "options": [
+			"id",
+			"page",
+			"pageSize"
+		]
+  },
+	"getCloudproviderMachinetypesById": {
+    "path": "\/cloudproviders\/:id\/machine-types",
+    "method": "GET",
+    "options": [
+			"id",
+			"page",
+			"pageSize"
+		]
+  },
+	"getCloudproviderMachineimagesByIdRegion": {
+    "path": "\/cloudproviders\/:id\/:region\/machine-images",
+    "method": "GET",
+    "options": [
+			"region",
+			"id",
+			"page",
+			"pageSize"
+		]
+  },
+	"getCloudproviderNetworksByIdRegion": {
+    "path": "\/cloudproviders\/:id\/:region\/networks",
+    "method": "GET",
+    "options": [
+			"region",
+			"id",
+			"page",
+			"pageSize"
+		]
+  },
+	"getCloudproviderSecuritygroupsByIdRegion": {
+    "path": "\/cloudproviders\/:id\/:region\/networks\/security-groups",
+    "method": "GET",
+    "options": [
+			"region",
+			"id",
+			"page",
+			"pageSize"
+		]
+  }
+}

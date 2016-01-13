@@ -1,0 +1,56 @@
+{
+  "searchMessages": {
+    "path": "\/messages\/search",
+    "method": "GET",
+    "options": [
+			"q",
+			"page",
+			"pageSize"
+		]
+  },
+	"getUnreadMessages": {
+    "path": "\/messages\/unread",
+    "method": "GET",
+    "options": [
+			"page",
+			"pageSize"
+		]
+  },
+	"getOpenMessages": {
+    "path": "\/messages\/open",
+    "method": "GET",
+    "options": [
+			"page",
+			"pageSize"
+		]
+  },
+	"getMessageById": {
+    "path": "\/messages\/:id",
+    "method": "GET",
+    "options": [
+			"id"
+		]
+  },
+	"archiveMessageById": {
+    "path": "\/messages\/archive\/:id",
+    "method": "POST",
+    "options": [
+			"id"
+		]
+  },
+	"getArchivedMessages": {
+    "path": "\/messages\/archive-all",
+    "method": "GET",
+    "options": [
+			"page",
+			"pageSize"
+		]
+  },
+	"deleteMessageById": {
+    "path": "\/messages\/:id",
+    "method": "DELETE",
+    "options": [
+			"id"
+		]
+  }
+}

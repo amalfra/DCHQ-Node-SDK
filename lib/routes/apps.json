@@ -1,0 +1,212 @@
+{
+  "getApps": {
+    "path": "\/apps",
+    "method": "GET"
+  },
+	"getAppById": {
+    "path": "\/apps\/:id",
+    "method": "GET",
+    "options": [
+			"id"
+		]
+  },
+	"getActiveApps": {
+    "path": "\/apps\/active",
+    "method": "GET",
+    "options": [
+			"page",
+			"pageSize"
+		]
+  },
+	"getDestroyedApps": {
+    "path": "\/apps\/destroyed",
+    "method": "GET",
+    "options": [
+			"page",
+			"pageSize"
+		]
+  },
+	"deleteAllDestroyedApps": {
+    "path": "\/apps\/delete-all-destroyed",
+    "method": "DELETE"
+  },
+	"updateAppById": {
+    "path": "\/apps\/:id",
+    "method": "PUT",
+    "options": [
+			"name",
+			"reason",
+			"description",
+			"tags",
+			"id"
+		]
+  },
+	"deployAppById": {
+    "path": "\/apps\/deploy\/:id",
+    "method": "POST",
+    "options": [
+			"id"
+		]
+  },
+	"getAppsDeploy": {
+    "path": "\/apps\/deploy",
+    "method": "GET"
+  },
+	"stopAppById": {
+    "path": "\/apps\/:id\/stop",
+    "method": "POST",
+    "options": [
+			"id"
+		]
+  },
+	"startAppById": {
+    "path": "\/apps\/:id\/start",
+    "method": "POST",
+    "options": [
+			"id"
+		]
+  },
+	"restartAppById": {
+    "path": "\/apps\/:id\/restart",
+    "method": "POST",
+    "options": [
+			"id"
+		]
+  },
+	"destroyAppById": {
+    "path": "\/apps\/:id\/destroy",
+    "method": "POST",
+    "options": [
+			"id"
+		]
+  },
+	"getAppBackupsById": {
+    "path": "\/apps\/:id\/backup",
+    "method": "GET",
+    "options": [
+			"id"
+		]
+  },
+	"createAppBackupById": {
+    "path": "\/apps\/:id\/backup",
+    "method": "POST",
+    "options": [
+			"id",
+			"note"
+		]
+  },
+	"createAppBackupNowById": {
+    "path": "\/apps\/:id\/backup-now",
+    "method": "POST",
+    "options": [
+			"id",
+			"note"
+		]
+  },
+	"getAppPluginsById": {
+    "path": "\/apps\/:id\/plugin",
+    "method": "GET",
+    "options": [
+			"id"
+		]
+  },
+	"createAppPluginById": {
+    "path": "\/apps\/:id\/plugin",
+    "method": "POST",
+    "options": [
+			"id",
+			"continuous",
+			"note"
+		]
+  },
+	"createAppPluginNowById": {
+    "path": "\/apps\/:id\/plugin-now",
+    "method": "POST",
+    "options": [
+			"id",
+			"continuous",
+			"note"
+		]
+  },
+	"appRollbackById": {
+    "path": "\/apps\/:id\/rollback",
+    "method": "GET",
+    "options": [
+			"id"
+		]
+  },
+	"appRollbackNowById": {
+    "path": "\/apps\/:id\/rollback-now",
+    "method": "GET",
+    "options": [
+			"id",
+			"note",
+			"inactive"
+		]
+  },
+	"getAppScaleOutCreateById": {
+    "path": "\/apps\/:id\/scale-out-create",
+    "method": "GET",
+    "options": [
+			"id"
+		]
+  },
+	"createAppScaleOutCreateById": {
+    "path": "\/apps\/:id\/scale-out-create",
+    "method": "POST",
+    "options": [
+			"id"
+		]
+  },
+	"createAppScaleOutCreateNowById": {
+    "path": "\/apps\/:id\/scale-out-create-now",
+    "method": "POST",
+    "options": [
+			"id",
+			"note"
+		]
+  },
+	"getAppScaleInCreateById": {
+    "path": "\/apps\/:id\/scale-in",
+    "method": "GET",
+    "options": [
+			"id"
+		]
+  },
+	"createAppScaleInById": {
+    "path": "\/apps\/:id\/scale-in",
+    "method": "POST",
+    "options": [
+			"id",
+			"note",
+			"nextCronDate"
+		]
+  },
+	"createAppScaleInNowById": {
+    "path": "\/apps\/:id\/scale-in-now",
+    "method": "POST",
+    "options": [
+			"id",
+			"note",
+			"nextCronDate"
+		]
+  },
+	"searchApps": {
+    "path": "\/apps\/search",
+    "method": "GET",
+    "options": [
+			"page",
+			"pageSize",
+			"q"
+		]
+  },
+	"appMonitorById": {
+    "path": "\/apps\/:id\/monitor",
+    "method": "POST",
+    "options": [
+			"id",
+			"start",
+			"end"
+		]
+  }
+}

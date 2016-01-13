@@ -1,0 +1,48 @@
+{
+  "getUsergroups": {
+    "path": "\/usergroups",
+    "method": "GET",
+    "options": [
+			"page",
+			"pageSize"
+		]
+  },
+	"getUsergroupById": {
+    "path": "\/usergroups\/:id",
+    "method": "GET",
+    "options": [
+			"id"
+		]
+  },
+	"createUsergroup": {
+    "path": "\/usergroups",
+    "method": "POST",
+    "options": [
+			"name"
+		]
+  },
+	"updateUsergroupById": {
+    "path": "\/usergroups\/:id",
+    "method": "PUT",
+    "options": [
+			"name",
+			"id"
+		]
+  },
+	"deleteUsergroupById": {
+    "path": "\/usergroups\/:id",
+    "method": "DELETE",
+    "options": [
+			"id"
+		]
+  },
+	"searchUsergroups": {
+    "path": "\/usergroups\/search",
+    "method": "GET",
+    "options": [
+			"page",
+			"pageSize",
+			"q"
+		]
+  }
+}

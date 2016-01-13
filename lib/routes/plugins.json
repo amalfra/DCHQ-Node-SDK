@@ -1,0 +1,99 @@
+{
+	"createPlugin": {
+    "path": "\/plugins",
+    "method": "POST",
+    "options": [
+			"name",
+			"version",
+			"license",
+			"description",
+			"baseScript"
+		]
+  },
+	"getPluginsManage": {
+    "path": "\/plugins\/manage",
+    "method": "GET",
+    "options": [
+			"page",
+			"pageSize"
+		]
+  },
+	"getPluginManageById": {
+    "path": "\/plugins\/manage\/:id",
+    "method": "GET",
+    "options": [
+			"id"
+		]
+  },
+	"getPluginsStarred": {
+    "path": "\/plugins\/starred",
+    "method": "GET",
+    "options": [
+			"page",
+			"pageSize"
+		]
+  },
+	"updatePluginById": {
+    "path": "\/plugins\/:id",
+    "method": "PUT",
+    "options": [
+			"id",
+			"name",
+			"version",
+			"license",
+			"description",
+			"baseScript"
+		]
+  },
+	"deletePluginById": {
+    "path": "\/plugins\/:id",
+    "method": "DELETE",
+    "options": [
+			"id"
+		]
+  },
+	"searchPlugins": {
+    "path": "\/plugins\/search",
+    "method": "GET",
+    "options": [
+			"q",
+			"page",
+			"pageSize"
+		]
+  },
+	"reindexPlugins": {
+    "path": "\/plugins",
+    "method": "GET"
+  },
+	"searchActiveEntitledPlugins": {
+    "path": "\/plugins\/searchActiveEntitled",
+    "method": "GET",
+    "options": [
+			"q",
+			"page",
+			"pageSize"
+		]
+  },
+	"starPluginById": {
+    "path": "\/plugins\/:id\/star",
+    "method": "POST",
+    "options": [
+			"id"
+		]
+  },
+	"unstarPluginById": {
+    "path": "\/plugins\/:id\/unstar",
+    "method": "POST",
+    "options": [
+			"id"
+		]
+  },
+	"getPlugins": {
+    "path": "\/plugins",
+    "method": "GET",
+    "options": [
+			"page",
+			"pageSize"
+		]
+  }
+}

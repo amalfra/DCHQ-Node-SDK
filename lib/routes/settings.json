@@ -1,0 +1,14 @@
+{
+	"settingsEncrypt": {
+    "path": "\/settings\/encryptor",
+    "method": "GET",
+    "options": [
+			"key",
+			"text"
+		]
+  },
+	"settingsRecreateMissingQueues": {
+    "path": "\/settings\/recreate-missing-queues",
+    "method": "GET"
+  }
+}

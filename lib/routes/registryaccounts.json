@@ -1,0 +1,94 @@
+{
+	"getRegistryaccounts": {
+    "path": "\/registryaccounts",
+    "method": "GET"
+  },
+	"getRegistryaccountById": {
+    "path": "\/registryaccounts\/:id",
+    "method": "GET",
+		"options": [
+			"id"
+		]
+  },
+	"deleteRegistryaccountById": {
+    "path": "\/registryaccounts\/:id",
+    "method": "DELETE",
+		"options": [
+			"id"
+		]
+  },
+	"getRegistryaccountsManage": {
+    "path": "\/registryaccounts",
+    "method": "GET",
+		"options": [
+			"page",
+			"pageSize"
+		]
+  },
+	"searchRegistryaccounts": {
+    "path": "\/registryaccounts\/search",
+    "method": "GET",
+		"options": [
+			"q",
+			"page",
+			"pageSize"
+		]
+  },
+	"reindexRegistryaccounts": {
+    "path": "\/registryaccounts\/reindex",
+    "method": "GET"
+  },
+	"getRegistryaccountJenkinsById": {
+    "path": "\/registryaccounts\/jenkins\/:id",
+    "method": "GET",
+		"options": [
+			"id"
+		]
+  },
+	"getRegistryaccountTypeById": {
+    "path": "\/registryaccounts\/accounttype\/:id",
+    "method": "GET",
+		"options": [
+			"id"
+		]
+  },
+	"getRegistryaccountCloudproviders": {
+    "path": "\/registryaccounts\/accounttype\/cloud-provider",
+    "method": "GET"
+  },
+	"createRegistryaccount": {
+    "path": "\/registryaccounts",
+    "method": "POST",
+		"options": [
+			"name",
+			"url",
+			"email",
+			"username",
+			"password",
+			"securityGroupId",
+			"networkId",
+			"referenceId",
+			"vmQuota",
+			"blueprintEntitlementType",
+			"entitledBlueprint"
+		]
+  },
+	"updateRegistryaccountById": {
+    "path": "\/registryaccounts\/:id",
+    "method": "PUT",
+		"options": [
+			"id",
+			"name",
+			"url",
+			"email",
+			"username",
+			"password",
+			"securityGroupId",
+			"networkId",
+			"referenceId",
+			"vmQuota",
+			"blueprintEntitlementType",
+			"entitledBlueprint"
+		]
+  }
+}

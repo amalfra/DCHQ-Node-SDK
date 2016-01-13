@@ -1,0 +1,92 @@
+{
+  "getDockerservers": {
+    "path": "\/dockerservers",
+    "method": "GET"
+  },
+  "getDockerserversManage": {
+    "path": "\/dockerservers\/manage",
+    "method": "GET",
+    "options": [
+      "page",
+      "pageSize"
+    ]
+  },
+	"getDockerserverById": {
+    "path": "\/dockerservers\/:id",
+    "method": "GET",
+    "options": [
+      "id"
+		]
+  },
+	"getDockerserverStatusById": {
+    "path": "\/dockerservers\/:id/status",
+    "method": "GET",
+    "options": [
+      "id"
+		]
+  },
+	"getDockerserverPingById": {
+    "path": "\/dockerservers\/:id/ping",
+    "method": "GET",
+    "options": [
+      "id"
+		]
+  },
+	"createDockerserver": {
+    "path": "\/dockerservers",
+    "method": "POST",
+    "options": [
+      "name",
+      "hostOrIp",
+      "description",
+      "size",
+      "inactive",
+			"dataCenter"
+    ]
+  },
+	"updateDockerserverById": {
+    "path": "\/dockerservers\/:id",
+    "method": "PUT",
+    "options": [
+			"id",
+      "name",
+      "hostOrIp",
+      "description",
+      "inactive"
+    ]
+  },
+	"deleteDockerserverById": {
+    "path": "\/dockerservers\/:id",
+    "method": "DELETE",
+    "options": [
+			"id"
+		]
+	},
+  "searchDockerservers": {
+    "path": "\/dockerservers/search",
+    "method": "GET",
+    "options": [
+			"q",
+			"page",
+			"pageSize"
+		]
+	},
+	"reindexDockerservers": {
+    "path": "\/dockerservers\/reindex",
+    "method": "GET"
+	},
+	"monitorDockerserverById": {
+    "path": "\/dockerservers\/:id\/monitor",
+    "method": "GET",
+    "options": [
+			"id"
+		]
+	},
+	"getDockerserversManageById": {
+    "path": "\/dockerservers\/manage\/:id",
+    "method": "GET",
+    "options": [
+			"id"
+		]
+	}
+}

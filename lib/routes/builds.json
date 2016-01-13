@@ -1,0 +1,94 @@
+{
+  "getBuilds": {
+    "path": "\/builds",
+    "method": "GET"
+  },
+  "getBuildsManage": {
+    "path": "\/builds\/manage",
+    "method": "GET",
+    "options": [
+      "page",
+      "pageSize"
+    ]
+  },
+  "getBuildsManageById": {
+    "path": "\/builds\/manage/:id",
+    "method": "GET",
+    "options": [
+      "id"
+    ]
+  },
+  "searchBuilds": {
+    "path": "\/builds/search",
+    "method": "GET",
+    "options": [
+			"q",
+			"page",
+			"pageSize"
+		]
+	},
+	"searchActiveEntitled": {
+    "path": "\/builds/searchActiveEntitled",
+    "method": "GET",
+    "options": [
+			"q",
+			"page",
+			"pageSize"
+		]
+	},
+	"reindexBuilds": {
+    "path": "\/builds/reindex",
+    "method": "GET"
+  },
+	"getBuildById": {
+    "path": "\/builds/:id",
+    "method": "GET",
+    "options": [
+      "id"
+    ]
+  },
+	"createBuild": {
+    "path": "\/builds",
+    "method": "POST",
+    "options": [
+      "description",
+      "dockerScript",
+      "repository",
+      "tag",
+      "gitCloneUrl",
+			"serverId"
+    ]
+  },
+	"buildNow": {
+    "path": "\/builds/buildnow",
+    "method": "POST",
+    "options": [
+      "description",
+      "dockerScript",
+      "repository",
+      "tag",
+      "gitCloneUrl",
+			"serverId"
+    ]
+  },
+	"updateBuildById": {
+    "path": "\/builds/:id",
+    "method": "PUT",
+    "options": [
+			"id",
+      "description",
+      "dockerScript",
+      "repository",
+      "tag",
+      "gitCloneUrl",
+			"serverId"
+    ]
+  },
+	"deleteBuildById": {
+    "path": "\/builds/:id",
+    "method": "DELETE",
+		"options": [
+			"id"		
+		]
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "getProfiles": {
+    "path": "\/profiles",
+    "method": "GET",
+    "options": [
+			"page",
+			"pageSize"
+		]
+  },
+	"getProfileById": {
+    "path": "\/profiles\/:id",
+    "method": "GET",
+    "options": [
+			"page",
+			"pageSize",
+			"id"
+		]
+  },
+	"updateProfileById": {
+    "path": "\/profiles\/:id",
+    "method": "PUT",
+    "options": [
+			"name",
+			"memoryCap",
+			"id",
+			"cpuCap",
+			"storageCap",
+			"containerCap",
+			"defaultProfile"
+		]
+  },
+	"deleteProfileById": {
+    "path": "\/profiles\/:id",
+    "method": "DELETE",
+    "options": [
+			"id"
+		]
+  },
+	"createProfile": {
+    "path": "\/profiles",
+    "method": "POST",
+    "options": [
+			"name",
+			"memoryCap",
+			"cpuCap",
+			"storageCap",
+			"containerCap",
+			"defaultProfile"
+		]
+  },
+	"searchProfiles": {
+    "path": "\/profiles\/search",
+    "method": "GET",
+    "options": [
+			"page",
+			"pageSize",
+			"q"
+		]
+  }
+}

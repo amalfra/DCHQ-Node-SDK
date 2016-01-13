@@ -1,0 +1,93 @@
+{
+  "getBlueprints": {
+    "path": "\/blueprints",
+    "method": "GET"
+  },
+  "createBlueprint": {
+    "path": "\/blueprints",
+    "method": "POST",
+    "options": [
+      "name",
+      "version",
+      "description",
+      "blueprintType",
+      "yml",
+      "entitlementType",
+      "inactive"
+    ]
+  },
+  "getBlueprintsManage": {
+    "path": "\/blueprints\/manage",
+    "method": "GET",
+    "options": [
+      "page",
+      "pageSize"
+    ]
+  },
+  "getBlueprintsManageById": {
+    "path": "\/blueprints\/manage/:id",
+    "method": "GET",
+		"options": [
+      "id"
+    ]
+  },
+	"searchBlueprintsLibraryPage": {
+		"path": "\/blueprints\/searchLibraryPage",
+    "method": "GET",
+    "options": [
+      "q",
+			"page",
+      "pageSize"
+    ]
+	},
+	"getBlueprintById": {
+    "path": "\/blueprints/:id",
+    "method": "GET",
+		"options": [
+			"id"		
+		]
+  },
+	"updateBlueprintById": {
+    "path": "\/blueprints/:id",
+    "method": "PUT",
+		"options": [
+			"id",
+			"name",
+			"version",
+			"description",
+			"tags"		
+		]
+  },
+	"deleteBlueprintById": {
+    "path": "\/blueprints/:id",
+    "method": "DELETE",
+		"options": [
+			"id"		
+		]
+  },
+	"starBlueprintById": {
+    "path": "\/blueprints/:id/star",
+    "method": "POST",
+		"options": [
+			"id"		
+		]
+  },
+	"unstarBlueprintById": {
+    "path": "\/blueprints/:id/unstar",
+    "method": "POST",
+		"options": [
+			"id"		
+		]
+  },
+	"getStarredBlueprints": {
+    "path": "\/blueprints/starred",
+    "method": "GET"
+  },
+	"getBlueprintYamlById": {
+    "path": "\/blueprints/:id/yaml",
+    "method": "GET",
+		"options": [
+			"id"		
+		]
+  }
+}

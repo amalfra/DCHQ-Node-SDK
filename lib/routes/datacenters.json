@@ -1,0 +1,58 @@
+{
+  "getDatacenters": {
+    "path": "\/datacenters",
+    "method": "GET"
+  },
+	"getDatacenterById": {
+    "path": "\/datacenters/:id",
+    "method": "GET",
+		"options": [
+			"id"		
+		]
+  },
+  "createDatacenter": {
+    "path": "\/datacenters",
+    "method": "POST",
+    "options": [
+      "name",
+      "description",
+      "placementPolicy",
+      "autoScale",
+      "inactive",
+      "profileEnforced"
+    ]
+  },
+  "updateDatacenterById": {
+    "path": "\/datacenters/:id",
+    "method": "PUT",
+    "options": [
+			"id",
+      "name",
+      "description",
+      "placementPolicy",
+      "autoScale",
+      "inactive",
+      "profileEnforced"
+    ]
+  },
+	"deleteDatacenterById": {
+    "path": "\/datacenters/:id",
+    "method": "DELETE",
+		"options": [
+			"id"		
+		]
+  },
+	"getDatacentersManage": {
+		"path": "\/datacenters/manage",
+    "method": "GET"
+	},
+  "searchDatacenters": {
+    "path": "\/datacenters/search",
+    "method": "GET",
+    "options": [
+			"q",
+			"page",
+			"pageSize"
+		]
+	}
+}

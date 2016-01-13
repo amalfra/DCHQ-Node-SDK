@@ -1,0 +1,127 @@
+{
+	"getUsers": {
+    "path": "\/users",
+    "method": "GET",
+    "options": [
+			"page",
+			"pageSize"
+		]
+  },
+	"getUserById": {
+    "path": "\/users\/:id",
+    "method": "GET",
+    "options": [
+			"id"
+		]
+  },
+	"updateUserById": {
+    "path": "\/users\/:id",
+    "method": "PUT",
+    "options": [
+			"id",
+			"firstname",
+			"lastname",
+			"company",
+			"jobTitle",
+			"phoneNumber"
+		]
+  },
+	"deleteUserById": {
+    "path": "\/users\/:id",
+    "method": "DELETE",
+    "options": [
+			"id"
+		]
+	},
+	"createUser": {
+    "path": "\/users",
+    "method": "POST",
+    "options": [
+			"username",
+			"password",
+			"email",
+			"firstname",
+			"lastname",
+			"enabled",
+			"company",
+			"jobTitle",
+			"phoneNumber"
+		]
+  },
+	"searchUsers": {
+    "path": "\/users\/search",
+    "method": "GET",
+    "options": [
+			"q",
+			"page",
+			"pageSize"
+		]
+  },
+	"updateUserProfileById": {
+    "path": "\/users\/update-profile\/:id",
+    "method": "PUT",
+    "options": [
+			"id",
+			"username",
+			"password",
+			"email",
+			"firstname",
+			"lastname",
+			"enabled",
+			"company",
+			"jobTitle",
+			"phoneNumber"
+		]
+  },
+	"getUserLoginStatus": {
+    "path": "\/users\/login-status",
+    "method": "GET"
+  },
+	"signupUser": {
+    "path": "\/users\/sign-up",
+    "method": "POST",
+    "options": [
+			"username",
+			"password",
+			"email",
+			"firstname",
+			"lastname",
+			"company"
+		]
+  },
+	"signupTenantUser": {
+    "path": "\/users\/tenant-sign-up",
+    "method": "POST",
+    "options": [
+			"username",
+			"password",
+			"email",
+			"firstname",
+			"lastname",
+			"company",
+			"phoneNumber"
+		]
+  },
+	"searchUserByEmail": {
+    "path": "\/users\/search-by-email-username",
+    "method": "GET",
+    "options": [
+			"email"
+		]
+  },
+	"generateUserPasswordResetByEmail": {
+    "path": "\/users\/generate-reset-password",
+    "method": "POST",
+    "options": [
+			"email"
+		]
+  },
+	"resetUserPasswordResetById": {
+    "path": "\/users\/reset-password\/:id",
+    "method": "GET",
+    "options": [
+			"id",
+			"newPassword"
+		]
+  }
+}
