@@ -1,2 +1,7 @@
 node_modules/.bin/**
 node_modules/**
+
+# Text editor temp files
+*~
+*.swp
+*.swo
